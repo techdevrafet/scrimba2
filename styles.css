@@ -1,0 +1,131 @@
+* {
+   box-sizing: border-box;
+}
+
+html,
+body {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: "Asap", sans-serif;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
+}
+
+h1,
+.tagline {
+   text-align: center;
+}
+
+.container {
+   display: flex;
+   background: #001d3d;
+   margin: 0 auto;
+   justify-content: center;
+   max-width: 1000px;
+   border-radius: 10px;
+}
+
+.card {
+   cursor: pointer;
+   color: white;
+   background-color: #003566;
+   width: 300px;
+   text-align: center;
+   margin: 1em;
+   padding: 1em 0.25em;
+   position: relative;
+   border-radius: 10px;
+}
+
+.card h2 {
+   margin: 0;
+}
+
+.card ul li {
+   text-align: left;
+   padding: 0 0 1em 0.5em;
+}
+
+.card ul li:last-child {
+   padding-bottom: 5em;
+}
+
+.card-cat ul li::marker {
+   content: "🐱";
+}
+
+.card-lion ul li::marker {
+   content: "🦁";
+}
+
+.card-tiger ul li::marker {
+   content: "🐯";
+}
+
+button {
+   font-family: inherit;
+   position: absolute;
+   bottom: 0;
+   right: 10%;
+   padding: 1em 2em;
+   border: none;
+   font-size: 1rem;
+   font-weight: 700;
+   margin-bottom: 1em;
+   background-color: #ffd60a;
+   border-radius: 25px;
+}
+
+button:hover,
+button:focus {
+   cursor: pointer;
+   background-color: white;
+}
+
+.toggle-container {
+   width: 250px;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   margin: 20px auto;
+}
+
+.toggle {
+   width: 64px;
+   height: 32px;
+   background: #003566;
+   border-radius: 16px;
+   padding: 4px;
+}
+
+.toggle:hover {
+   cursor: pointer;
+}
+
+.dot {
+   width: 24px;
+   height: 24px;
+   background: #ffd60a;
+   border-radius: 50%;
+}
+
+.scale {
+   transform: scale(1.04);
+   transition: all 0.5s;
+}
+
+.float {
+   float: right;
+}
+
+.hide {
+   display: none;
+}
