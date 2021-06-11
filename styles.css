@@ -27,7 +27,6 @@ h1,
 .container {
    display: flex;
    background: #001d3d;
-   margin: 0 auto;
    justify-content: center;
    max-width: 1000px;
    border-radius: 10px;
@@ -128,4 +127,15 @@ button:focus {
 
 .hide {
    display: none;
+}
+
+@media (max-width: 1050px ) {
+   body {
+      height: fit-content;
+      overflow: auto;
+   }
+
+   .container {
+      flex-direction: column;
+   }
 }
